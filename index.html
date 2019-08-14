@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Odigo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="public/css/style.css">
+</head>
+
+<body>
+    <svg class="visually-hidden" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon-like" viewBox="0 0 16 15">
+            <path d="M8 15l-1.16-1.079C2.72 10.104 0 7.586 0 4.496 0 1.978 1.936 0 4.4 0 5.792 0 7.128.662 8 1.708 8.872.662 10.208 0 11.6 0 14.064 0 16 1.978 16 4.496c0 3.09-2.72 5.608-6.84 9.433L8 15z"/>
+        </symbol>
+        <symbol id="icon-shape" viewBox="0 0 16 15">
+            <path d="M13.993 1.4c0-.77-.623-1.4-1.393-1.4H1.4C.63 0 0 .63 0 1.4v8.4c0 .77.63 1.4 1.4 1.4h9.8L14 14l-.007-12.6zm-2.793 7H2.8V7h8.4v1.4zm0-2.1H2.8V4.9h8.4v1.4zm0-2.1H2.8V2.8h8.4v1.4z"/>
+        </symbol>
+        <symbol id="icon-play" viewBox="0 0 16 15">
+            <path d="M56 0C25.088 0 0 25.088 0 56s25.088 56 56 56 56-25.088 56-56S86.912 0 56 0zM44.8 81.2V30.8L78.4 56 44.8 81.2z"/>
+        </symbol>
+    </svg>
+
+    <!-- Layout -->
+    <div class="layout">
+
+        <!-- Top Container -->
+        <div class="top-container">
+            <div class="top-container__wrap">
+                <header class="main-header">
+                    <nav class="main-header__nav">
+                        <a class="main-header__logo main-header__logo--normal">
+                            <img src="public/img/odigo-Logo.svg" width="83" height="30" alt="Odigo">
+                        </a>
+                        <ul class="nav-list">
+                            <li class="nav-list__item"><a href="info.html">Articles</a></li>
+                            <li class="nav-list__item"><a href="news.html">Locations</a></li>
+                            <li class="nav-list__item"><a href="price.html">Videos</a></li>
+                            <li class="nav-list__item"><a href="catalog.html">Sign in</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <section class="preview-section">
+                    <h1 class="preview-section__title">Discover Amazing places in Japan</h1>
+                    <p class="preview-section__description">Jump off balcony, onto stranger's head. Chase ball of string hide when guests
+                        come over. Being gorgeous with belly side up i could pee on this if i had the
+                        energy but under the bed, for attack the child, open the door. </p>
+                    <form class="search">
+                        <div class="search__wrap">
+                            <input class="search__input" type="text" name="search" placeholder="What would you like to do?" id="filter-what">
+                            <label class="visually-hidden" for="filter-what">What would you like to do?</label>
+                        </div>
+                        <div class="search__wrap">
+                            <input class="search__input" type="text" name="search" placeholder="Where would you like to go?" id="filter-where">
+                            <label class="visually-hidden" for="filter-where">Where would you like to go?</label>
+                        </div>
+                        <button class="search__button" type="submit">Search</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <!-- /Top Container -->
+
+        <!-- Main Content -->
+        <main class="content-box__container">
+            <section class="content-box content-box--float">
+                <h2 class="content-box__title">Benefits of Odigo</h2>
+                <ul class="content-box__list">
+                    <li class="service-list">
+                        <img class="service-list__pic" src="public/img/Icon1.png" alt="">
+                        <h3 class="service-list__title">Welcome to Odigo!</h3>
+                        <p class="service-list__text">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.</p>
+                        <a class="inner-link" href="#">LEARN MORE</a>
+                    </li>
+                    <li class="service-list">
+                        <img class="service-list__pic" src="public/img/Icon2.png" alt="">
+                        <h3 class="service-list__title">Your Personal Japan Guide</h3>
+                        <p class="service-list__text">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.</p>
+                        <a class="inner-link" href="#">LEARN MORE</a>
+                    </li>
+                    <li class="service-list">
+                        <img class="service-list__pic" src="public/img/Icon3.png" alt="">
+                        <h3 class="service-list__title">Promoting Local Businesses</h3>
+                        <p class="service-list__text">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.</p>
+                        <a class="inner-link" href="#">LEARN MORE</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="catalog">
+                <div class="catalog__wrap">
+                    <h2 class="catalog__title">Get inspired for your next trip</h2>
+                    <a class="inner-link" href="#">View all</a>
+                </div>
+                <ul class="gallery">
+                    <li class="photo photo--big">
+                        <h3 class="photo__title">Mount Fuji</h3>
+                        <img class="photo__img" src="public/img/Fuji.jpg" alt="Mount Fuji">
+                    </li>
+                    <li class="photo photo--big">
+                        <h3 class="photo__title">Kyoto</h3>
+                        <img class="photo__img" src="public/img/Kyoto.jpg" alt="Kyoto">
+                    </li>
+                    <li class="photo">
+                        <h3 class="photo__title">Tokyo</h3>
+                        <img class="photo__img" src="public/img/Tokyo.jpg" alt="Tokyo">
+                    </li>
+                    <li class="photo"> 
+                        <h3 class="photo__title">Niigata</h3>
+                        <img class="photo__img" src="public/img/Niigata.jpg" alt="Niigata">
+                    <li class="photo">
+                        <h3 class="photo__title">Sapporo</h3>
+                        <img class="photo__img" src="public/img/Sapporo.jpg" alt="Sapporo">
+                    </li>
+                </ul>
+            </section>
+
+            <section class="product-list">
+                <h2 class="product-list__title visually-hidden">Overwiew</h2>
+                
+                <article class="post">
+                    <div class="post__img-wrap">
+                        <img class="post__img" src="public/img/Prefecture.jpg" alt="Prefecture Tottori">
+                    </div>
+                    <div class="post__content">
+                        <h2 class="post__title">Prefecture in Focus: <br/> Tottori</h2>
+                        <p class="post__text">
+                            Jump off balcony, onto stranger's head. Chase ball of string
+                            hide when guests come over. Being gorgeous with belly side up
+                            i could pee on this if i had the energy but under the bed,
+                            for attack the child, open the door,
+                        </p>
+                        <a class="inner-link" href="#">Viev Prefecture</a>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <div class="post__img-wrap">
+                        <img class="post__img" src="public/img/Neighborhood.jpg" alt="Kyoto’s Arashiyama">
+                    </div>
+                    <div class="post__content">
+                        <h2 class="post__title">Featured Neighborhood: <br/>Kyoto’s Arashiyama</h2>
+                        <p class="post__text">
+                            Jump off balcony, onto stranger's head. Chase ball of string
+                            hide when guests come over. Being gorgeous with belly side up
+                            i could pee on this if i had the energy but under the bed,
+                            for attack the child, open the door,
+                        </p>
+                        <a class="inner-link" href="#">Viev Neighborhood</a>
+                    </div>
+                </article> 
+            </section>
+
+            <section class="insta-box">
+                <h2 class="insta-box__title">Today top places to visit</h2>
+                <article class="insta-box__wrap">
+                    <div class="insta-box__wiget">
+                        <figure class="insta-box__photo">
+                            <div class="insta-box__cover" style="background-image: url(public/img/nagoya_tin.jpg">
+                                <img class="visually-hidden" src="public/img/nagoya_tin.jpg" alt="Nagoya">
+                            </div>
+                            <div class="insta-box__panel">
+                                <figcaption class="insta-box__name">Nagoya</figcaption>
+                                <ul class="action-list">
+                                    <li class="action-list__item">
+                                        <span class="action-list__counter">221</span>
+                                        <button class="action-list__btn action-list__btn--like" title="Like">
+                                            <svg xmlns="http://www.w3.org/2000/svg"><use xlink:href="#icon-like"></use></svg>
+                                        </button>
+                                    </li>
+                                    <li class="action-list__item">
+                                        <span class="action-list__counter">50</span>
+                                        <button class="action-list__btn action-list__btn--comment" title="Leave comment">
+                                            <svg xmlns="http://www.w3.org/2000/svg"><use xlink:href="#icon-shape"></use></svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </figure>    
+                        <p class="insta-box__descr">Jump off balcony, onto stranger's head. Chase ball of string
+                            hide when guests come over. Being gorgeous with belly side
+                            up i could pee on this.</p>
+                        <a class="insta-box__link" href="#">See more</a>
+                    </div>
+
+                    <div class="insta-box__wiget">
+                        <figure class="insta-box__photo">
+                            <div class="insta-box__cover" style="background-image: url(public/img/niigata_tin.jpg">
+                                <img class="visually-hidden" src="public/img/niigata_tin.jpg" alt="Niigata">
+                            </div>
+                            <div class="insta-box__panel">
+                                <figcaption class="insta-box__name">Niigata</figcaption>
+                                <ul class="action-list">
+                                    <li class="action-list__item">
+                                        <span class="action-list__counter">221</span>
+                                        <button class="action-list__btn action-list__btn--like" title="Like">
+                                            <svg xmlns="http://www.w3.org/2000/svg"><use xlink:href="#icon-like"></use></svg>
+                                        </button>
+                                    </li>
+                                    <li class="action-list__item">
+                                        <span class="action-list__counter">50</span>
+                                        <button class="action-list__btn action-list__btn--comment" title="Leave comment">
+                                            <svg xmlns="http://www.w3.org/2000/svg"><use xlink:href="#icon-shape"></use></svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </figure>    
+                        <p class="insta-box__descr">Jump off balcony, onto stranger's head. Chase ball of string
+                            hide when guests come over. Being gorgeous with belly side
+                            up i could pee on this.</p>
+                        <a class="insta-box__link" href="#">See more</a> 
+                    </div>
+
+                    <div class="insta-box__wiget">
+                        <figure class="insta-box__photo">
+                            <div class="insta-box__cover" style="background-image: url(public/img/osaka_tin.jpg">
+                                <img class="visually-hidden" src="public/img/osaka_tin.jpg" alt="Osaka">
+                            </div>
+                            <div class="insta-box__panel">
+                                <figcaption class="insta-box__name">Osaka</figcaption>
+                                <ul class="action-list">
+                                    <li class="action-list__item">
+                                        <span class="action-list__counter">221</span>
+                                        <button class="action-list__btn action-list__btn--like" title="Like">
+                                            <svg xmlns="http://www.w3.org/2000/svg"><use xlink:href="#icon-like"></use></svg>
+                                        </button>
+                                        </li>
+                                    <li class="action-list__item">
+                                        <span class="action-list__counter">50</span>
+                                        <button class="action-list__btn action-list__btn--comment" title="Leave comment">
+                                            <svg xmlns="http://www.w3.org/2000/svg"><use xlink:href="#icon-shape"></use></svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </figure>    
+                        <p class="insta-box__descr">Jump off balcony, onto stranger's head. Chase ball of string
+                            hide when guests come over. Being gorgeous with belly side
+                            up i could pee on this.</p>
+                        <a class="insta-box__link" href="#">See more</a> 
+                    </div>
+
+                    <div class="insta-box__wiget">
+                        <figure class="insta-box__photo">
+                            <div class="insta-box__cover" style="background-image: url(public/img/saitama_tin.jpg)">
+                                <img class="visually-hidden" src="public/img/saitama_tin.jpg" alt="Saitama">
+                            </div>
+                            <div class="insta-box__panel">
+                                <figcaption class="insta-box__name">Saitama</figcaption>
+                                <ul class="action-list">
+                                    <li class="action-list__item">
+                                        <span class="action-list__counter">221</span>
+                                        <button class="action-list__btn action-list__btn--like" title="Like">
+                                            <svg xmlns="http://www.w3.org/2000/svg"><use xlink:href="#icon-like"></use></svg>
+                                        </button>
+                                    </li>
+                                    <li class="action-list__item">
+                                        <span class="action-list__counter">50</span>
+                                        <button class="action-list__btn action-list__btn--comment" title="Leave comment">
+                                            <svg xmlns="http://www.w3.org/2000/svg"><use xlink:href="#icon-shape"></use></svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </figure>    
+                        <p class="insta-box__descr">Jump off balcony, onto stranger's head. Chase ball of string
+                            hide when guests come over. Being gorgeous with belly side
+                            up i could pee on this.</p>
+                        <a class="insta-box__link" href="#">See more</a> 
+                    </div>
+
+                    <div class="insta-box__wiget">
+                        <figure class="insta-box__photo">
+                            <div class="insta-box__cover" style="background-image: url(public/img/ueno_tin.jpg)">
+                                <img class="visually-hidden" src="public/img/ueno_tin.jpg" alt="Ueno">
+                            </div>
+                            <div class="insta-box__panel">
+                                <figcaption class="insta-box__name">Ueno</figcaption>
+                                <ul class="action-list">
+                                    <li class="action-list__item">
+                                        <span class="action-list__counter">221</span>
+                                        <button class="action-list__btn action-list__btn--like" title="Like">
+                                            <svg xmlns="http://www.w3.org/2000/svg"><use xlink:href="#icon-like"></use></svg>
+                                        </button>
+                                    </li>
+                                    <li class="action-list__item">
+                                        <span class="action-list__counter">50</span>
+                                        <button class="action-list__btn action-list__btn--comment" title="Leave comment">
+                                            <svg xmlns="http://www.w3.org/2000/svg"><use xlink:href="#icon-shape"></use></svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </figure>    
+                        <p class="insta-box__descr">Jump off balcony, onto stranger's head. Chase ball of string
+                            hide when guests come over. Being gorgeous with belly side
+                            up i could pee on this.</p>
+                        <a class="insta-box__link" href="#">See more</a> 
+                    </div>
+
+                    <div class="insta-box__wiget">
+                        <figure class="insta-box__photo">
+                            <div class="insta-box__cover" style="background-image: url(public/img/shibuya_tin.jpg">
+                                <img class="visually-hidden" src="public/img/shibuya_tin.jpg" alt="Shibuya">
+                            </div>
+                            <div class="insta-box__panel">
+                                <figcaption class="insta-box__name">Shibuya</figcaption>
+                                <ul class="action-list">
+                                    <li class="action-list__item">
+                                        <span class="action-list__counter">221</span>
+                                        <button class="action-list__btn action-list__btn--like" title="Like">
+                                            <svg xmlns="http://www.w3.org/2000/svg"><use xlink:href="#icon-like"></use></svg>
+                                        </button>
+                                    </li>
+                                    <li class="action-list__item">
+                                        <span class="action-list__counter">50</span>
+                                        <button class="action-list__btn action-list__btn--comment" title="Leave comment">
+                                            <svg xmlns="http://www.w3.org/2000/svg"><use xlink:href="#icon-shape"></use></svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </figure>    
+                        <p class="insta-box__descr">Jump off balcony, onto stranger's head. Chase ball of string
+                            hide when guests come over. Being gorgeous with belly side
+                            up i could pee on this.</p>
+                        <a class="insta-box__link" href="#">See more</a> 
+                    </div>
+                </article>    
+
+                            
+            </section>
+
+            <section class="video">
+                <h2 class="visually-hidden">Video</h2>
+                <video src="" poster="public/img/video.jpg">
+                    <svg xmlns="http://www.w3.org/2000/svg"><use xlink:href="#icon-play"></use></svg></video>
+            </section>
+        </main>
+        <!-- /Main Content -->
+
+        <!-- Footer -->
+        <footer>
+            <h2 class="visually-hidden">About Company</h2>
+            <nav class="footer-navigation">
+                <a class="footer-navigation__logo main-logo--large">
+                    <img class="footer-navigation__image" src="public/img/odigo-Logo.svg" alt="Odiqo">
+                </a>
+                <div class="footer-navigation__wrap">
+                    <h3 class="footer-navigation__title">Company</h3>
+                    <ul class="footer-navigation__list">
+                        <li class="footer-navigation__item"><a href="about.html">About</a></li>
+                        <li class="footer-navigation__item"><a href="team.html">Team</a></li>
+                        <li class="footer-navigation__item"><a href="careers.html">Careers</a></li>
+                        <li class="footer-navigation__item"><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-navigation__wrap">
+                    <h3 class="footer-navigation__title">Locations</h3>
+                    <ul class="footer-navigation__list">
+                        <li class="footer-navigation__item"><a href="tokyo.html">Tokyo</a></li>
+                        <li class="footer-navigation__item"><a href="kyoto.html">Kyoto</a></li>
+                        <li class="footer-navigation__item"><a href="osaka.html">Osaka</a></li>
+                        <li class="footer-navigation__item"><a href="hokkaido.html">Hokkaido</a></li>
+                    </ul>
+                </div>
+                <div class="footer-navigation__wrap">
+                    <h3 class="footer-navigation__title">Social Media</h3>
+                    <ul class="footer-navigation__list">
+                        <li class="footer-navigation__item"><a href="facebook.com">Facebook</a></li>
+                        <li class="footer-navigation__item"><a href="twitter.html">Twitter</a></li>
+                        <li class="footer-navigation__item"><a href="instagram.html">Instagram</a></li>
+                        <li class="footer-navigation__item"><a href="youtube.html">Youtube</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+        <!-- /Footer -->
+
+    </div>
+    <!-- /Layout -->
+    <script></script>
+</body>
+</html>

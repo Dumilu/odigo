@@ -1,0 +1,23 @@
+{
+  "name": "odigo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "^9.6.0",
+    "browser-sync": "^2.26.7",
+    "gulp-less": "^3.3.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "start": "gulp serve",
+    "build": "gulp style",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Veronika Makarova",
+  "license": "ISC"
+}
