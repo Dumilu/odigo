@@ -9,13 +9,20 @@
     margin-top: 58px;
     //margin-bottom: 368px; 
     align-items: center;
-}
 
+    @media @tablet {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
 .search__wrap {
     position: relative;
 
     width: 300px;
 
+    @media @tablet {
+        padding-bottom: 10px;
+    }
 }
 
 .search__wrap::before {
@@ -40,6 +47,8 @@
     margin: 0;
 
     width: 255px;
+
+    text-overflow: ellipsis;
 
     border: none;
     border-bottom: 3px solid #BFC0C5;
