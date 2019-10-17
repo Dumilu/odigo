@@ -1,36 +1,169 @@
-/* Nav */
-
+/* Navigation */
 .nav-list {
+  @media @mobile {
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+  }
+
+  // Toggle for navigation
+  &__toggle {
+      @media @mobile {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      cursor: pointer;
+      z-index: 100;
+      color: transparent;
+
+      &-control:checked ~ .nav-list__toggle {
+        width: 30px;
+        height: 30px;
+        right: 0;
+      }
+
+      &-button {
+        position: absolute;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        border-radius: 100%;
+        transition: 0.6s;
+      }
+
+      .button::before {
+        transform: translateY(-50%) rotate(45deg) scale(0);
+      }
+
+      .button::after {
+        transform: translateY(-50%) rotate(-45deg) scale(0);
+      }
+
+      &-control:checked ~ & &-button::before,
+      &-control:checked ~ & &-button::after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        transition: 0.5s;
+        z-index: 200;
+      }
+
+      &-control:checked ~ & &-button::before {
+        transform: translateY(-50%) rotate(45deg) scale(1);
+      }
+
+      &-control:checked ~ & &-button::after {
+        transform: translateY(-50%) rotate(-45deg) scale(1)
+      }
+    }
+  }
+
+  // Container for navigation
+  &__container {
     margin: 0px;
     padding: 0px;
-
     list-style: none;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-.nav-list__item {
+    @media @mobile {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+
+  // Items for navigation
+  &__item {
     margin-left: 5.625vw;
-    //margin-left: 82px;
+
+    a {
+      font-size: 18px;
+      font-weight: 100;
+      text-decoration-line: none;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+      line-height: 20px;
+      color: #ffffff;
+      transition: all 0.5s;
+    }
+
+    a:hover {
+      border-bottom: 2px solid #ffffff;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+    }
+
+    @media @mobile {
+      color: transparent;
+      font-size: 14px;
+      letter-spacing: -6.2px;
+      height: 7px;
+      line-height: 7px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      transform: scaleY(0.05);
+      transition: @transition-duration, opacity ease 1s;
+
+      &:nth-child(1) {
+        letter-spacing: -8px;
+      }
+
+      // Добавление ширины для второй линии
+      &:nth-child(2) {
+        letter-spacing: -7px;
+      }
+
+      // Настройки для элементов, начиная с четвёртого
+      &:nth-child(n + 4) {
+        letter-spacing: -8px;
+        margin-top: -7px;
+        opacity: 0;
+      }
+
+    // Получение линий для иконки гамбургера
+      &:before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #FFFFFF;
+        transform: translateY(-50%) scaleY(5);
+        transition: @transition-duration;
+      }
+    }
+  }
+
+  @media @mobile {
+    &__toggle-control:checked ~ .nav-list__container {
+      padding-top: 30px;
+      background: #0E1D28;
+
+      & .nav-list__item {
+        color: #FFFFFF;
+        letter-spacing: 0;
+        height: 40px;
+        line-height: 40px;
+        margin-top: 0;
+        opacity: 1;
+        transform: scaleY(1);
+        transition: @transition-duration, opacity 0.1s;
+      }
+      & .nav-list__item:before {
+        display: none;
+      }
+    }
+  }
 }
-
-.nav-list__item a {
-    font-size: 18px;
-    font-weight: 100;
-    
-    text-decoration-line: none;
-
-    line-height: 20px;
-    color: #ffffff;
-    transition: all 0.5s;
-}
-
-.nav-list__item a:hover {
-
-    border-bottom: 2px solid #ffffff;
-
-    padding-bottom: 10px;
-}
-

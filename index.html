@@ -33,12 +33,18 @@
                         <a class="main-header__logo main-header__logo--normal">
                             <img src="public/img/odigo-Logo.svg" width="83" height="30" alt="Odigo">
                         </a>
-                        <ul class="nav-list">
-                            <li class="nav-list__item"><a href="info.html">Articles</a></li>
-                            <li class="nav-list__item"><a href="news.html">Locations</a></li>
-                            <li class="nav-list__item"><a href="price.html">Videos</a></li>
-                            <li class="nav-list__item"><a href="catalog.html">Sign in</a></li>
-                        </ul>
+                        <div class="nav-list">
+                            <input class="nav-list__toggle-control visually-hidden" id="toggle" type="checkbox">
+                            <label class="nav-list__toggle" for="toggle">
+                                <span class="nav-list__toggle-button"></span>
+                            </label>
+                            <ul class="nav-list__container">
+                                <li class="nav-list__item"><a href="info.html">Articles</a></li>
+                                <li class="nav-list__item"><a href="news.html">Locations</a></li>
+                                <li class="nav-list__item"><a href="price.html">Videos</a></li>
+                                <li class="nav-list__item"><a href="catalog.html">Sign in</a></li>
+                            </ul>
+                        </div>
                     </nav>
                 </header>
 
@@ -107,10 +113,10 @@
                         <h3 class="photo__title">Tokyo</h3>
                         <img class="photo__img visually-hidden" src="public/img/Tokyo.jpg" alt="Tokyo">
                     </li>
-                    <li class="photo" style="background-image: url(public/img/Niigata.jpg);"> 
+                    <li class="photo" style="background-image: url(public/img/Niigata.jpg);">
                         <h3 class="photo__title">Niigata</h3>
                         <img class="photo__img visually-hidden" src="public/img/Niigata.jpg" alt="Niigata">
-                    </li>    
+                    </li>
                     <li class="photo" style="background-image: url(public/img/Sapporo.jpg);">
                         <h3 class="photo__title">Sapporo</h3>
                         <img class="photo__img visually-hidden" src="public/img/Sapporo.jpg" alt="Sapporo">
@@ -120,7 +126,7 @@
 
             <section class="product-list">
                 <h2 class="product-list__title visually-hidden">Overwiew</h2>
-                
+
                 <article class="post">
                     <div class="post__img-wrap" style="background-image: url(public/img/Prefecture.jpg);">
                         <img class="post__img visually-hidden" src="public/img/Prefecture.jpg" alt="Prefecture Tottori">
@@ -151,7 +157,7 @@
                         </p>
                         <a class="inner-link" href="#">Viev Neighborhood</a>
                     </div>
-                </article> 
+                </article>
             </section>
 
             <section class="insta-box">
@@ -179,7 +185,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        </figure>    
+                        </figure>
                         <p class="insta-box__descr">Jump off balcony, onto stranger's head. Chase ball of string
                             hide when guests come over. Being gorgeous with belly side
                             up i could pee on this.</p>
@@ -208,11 +214,11 @@
                                     </li>
                                 </ul>
                             </div>
-                        </figure>    
+                        </figure>
                         <p class="insta-box__descr">Jump off balcony, onto stranger's head. Chase ball of string
                             hide when guests come over. Being gorgeous with belly side
                             up i could pee on this.</p>
-                        <a class="insta-box__link" href="#">See more</a> 
+                        <a class="insta-box__link" href="#">See more</a>
                     </div>
 
                     <div class="insta-box__wiget">
@@ -237,11 +243,11 @@
                                     </li>
                                 </ul>
                             </div>
-                        </figure>    
+                        </figure>
                         <p class="insta-box__descr">Jump off balcony, onto stranger's head. Chase ball of string
                             hide when guests come over. Being gorgeous with belly side
                             up i could pee on this.</p>
-                        <a class="insta-box__link" href="#">See more</a> 
+                        <a class="insta-box__link" href="#">See more</a>
                     </div>
 
                     <div class="insta-box__wiget">
@@ -266,11 +272,11 @@
                                     </li>
                                 </ul>
                             </div>
-                        </figure>    
+                        </figure>
                         <p class="insta-box__descr">Jump off balcony, onto stranger's head. Chase ball of string
                             hide when guests come over. Being gorgeous with belly side
                             up i could pee on this.</p>
-                        <a class="insta-box__link" href="#">See more</a> 
+                        <a class="insta-box__link" href="#">See more</a>
                     </div>
 
                     <div class="insta-box__wiget">
@@ -295,11 +301,11 @@
                                     </li>
                                 </ul>
                             </div>
-                        </figure>    
+                        </figure>
                         <p class="insta-box__descr">Jump off balcony, onto stranger's head. Chase ball of string
                             hide when guests come over. Being gorgeous with belly side
                             up i could pee on this.</p>
-                        <a class="insta-box__link" href="#">See more</a> 
+                        <a class="insta-box__link" href="#">See more</a>
                     </div>
 
                     <div class="insta-box__wiget">
@@ -324,15 +330,15 @@
                                     </li>
                                 </ul>
                             </div>
-                        </figure>    
+                        </figure>
                         <p class="insta-box__descr">Jump off balcony, onto stranger's head. Chase ball of string
                             hide when guests come over. Being gorgeous with belly side
                             up i could pee on this.</p>
-                        <a class="insta-box__link" href="#">See more</a> 
+                        <a class="insta-box__link" href="#">See more</a>
                     </div>
-                </article>    
+                </article>
 
-                            
+
             </section>
 
             <section class="video">
@@ -376,7 +382,7 @@
                         <li class="footer-navigation__item"><a href="instagram.html">Instagram</a></li>
                         <li class="footer-navigation__item"><a href="youtube.html">Youtube</a></li>
                     </ul>
-                </div>    
+                </div>
             </nav>
         </footer>
         <!-- /Footer -->
