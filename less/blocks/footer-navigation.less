@@ -14,12 +14,12 @@ footer {
     //padding: 118px 148px 118px 194px;
 
     &__image {
-        margin-right: 230px;
+        margin-right: 15.9722vw;//230px;
         width: 170px;
         height: 64px;
     }
 
-    &__wrap {   
+    &__wrap {
         margin: 0;
         padding: 0;
         color: white;
@@ -27,7 +27,7 @@ footer {
 
     &__title {
         margin: 0;
-        
+
         font-weight: 300;
         font-size: 18px;
         line-height: 24px;
@@ -50,5 +50,22 @@ footer {
         font-size: 16px;
         line-height: 24px;
     }
+}
 
+@media @mobile {
+    .footer-navigation {
+        &__logo {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media @mobile-tin {
+    .footer-navigation {
+        &__wrap {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
 }

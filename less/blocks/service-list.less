@@ -1,15 +1,19 @@
-.service-list {
-    margin: 0 10px;
-    
-    &__pic {
-        width: 64px;
-        height: 64px;;
-        margin-bottom: 2.852vw;
+.services {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: baseline;
+
+    &__item {
+        margin: 0 10px;
+        position: relative;
     }
 
     &__title {
         margin-bottom: 26px;
-        
+
         font-size: 18px;
         font-weight: normal;
     }
@@ -22,14 +26,53 @@
         font-size: 16px;
         font-weight: normal;
     }
-}   
+
+    &__item--icon::before {
+        content: '';
+        display: block;
+        width: 64px;
+        height: 64px;
+        margin-bottom: 2.852vw;
+        background-repeat: no-repeat;
+    }
+
+    &__item--house::before {
+        background-image: url(../img/Icon1.png);
+    }
+
+    &__item--man::before {
+        background-image: url(../img/Icon2.png);
+    }
+
+    &__item--shop::before {
+        background-image: url(../img/Icon3.png);
+    }
+}
 
 @media @mobile {
-    .service-list {
-        margin-bottom: 10px;
+    .services {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        &__pic {
-            margin: 0 auto 16px auto;
+        &__item {
+            padding-left: 80px;
+            margin-bottom: 20px;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+        }
+
+        &__text {
+            max-width: none;
+            margin-bottom: 10px;
+        }
+
+        &__item--icon::before {
+            position: absolute;
+            left: 0;
+            top: 20px;
         }
     }
 }
