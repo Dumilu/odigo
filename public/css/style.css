@@ -353,6 +353,11 @@ IMG {
   border: none;
   border-bottom: 3px solid #BFC0C5;
 }
+@media (max-width: 1024px) {
+  .search__input {
+    width: 80vw;
+  }
+}
 @media (max-width: 425px) {
   .search__input {
     padding: 0 0 12px 30px;
@@ -695,6 +700,8 @@ IMG {
   padding: 0;
 }
 .insta-box__cover {
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 29.3185vw;
   max-height: 380px;
