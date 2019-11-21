@@ -315,6 +315,7 @@ IMG {
   margin: 0;
   margin-bottom: 10px;
   width: 17.708vw;
+  min-width: 240px;
   text-overflow: ellipsis;
   border: none;
   border-bottom: 3px solid #BFC0C5;
@@ -345,7 +346,7 @@ IMG {
     padding-bottom: 10px;
   }
   .search__input {
-    width: 80vw;
+    width: 40vw;
   }
 }
 @media (max-width: 425px) {
