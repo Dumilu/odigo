@@ -4,33 +4,35 @@
 
   &__title {
     margin: 75px 0 22px;
-
     max-width: 700px;
-
     font-size: 50px;
     font-weight: normal;
     line-height: 60px;
     color: #ffffff;
-
-    @media @mobile-tin {
-      margin: 50px 0 18px;
-      font-size: 30px;
-      line-height: 30px;
-    }
   }
 
   &__description {
     max-width: 540px;
-
     margin: 0;
     padding: 0;
-
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     color: #ffffff;
+  }
+}
 
-    @media @mobile-tin {
+@media @mobile-tin {
+
+  .preview-section {
+
+    &__title {
+      margin: 50px 0 18px;
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    &__description {
       font-size: 14px;
       line-height: 20px;
     }

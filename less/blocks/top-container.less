@@ -1,15 +1,21 @@
+/* Файл blocks/layout-container.less */
+
+.layout {
+    overflow: hidden;
+}
+
 /* Top Container */
 
 .top-container {
-    background-image: linear-gradient(to top, #070708, transparent), url("../img/bg.jpg");
+    background-image: linear-gradient(to top, #070708, transparent), url("../image/bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
 
-  .top-container__wrap {
+    &__wrap {
       max-width: 1262px;
       max-height: 962px;
       margin: 0 auto;
       padding: 3.8% 10.4% 26.1% 13.1%;
-  }
+    }
+}
