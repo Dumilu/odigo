@@ -547,6 +547,7 @@ IMG {
   font-weight: 200;
   line-height: 60px;
   color: #FFFFFF;
+  text-shadow: 2px 2px 6px black;
 }
 .photo__img {
   width: 100%;
@@ -688,6 +689,8 @@ IMG {
   font-size: 35px;
   line-height: 42px;
   font-weight: 400;
+  max-width: 500px;
+  border-bottom: 2px solid #006DFE;
 }
 .insta-box__wrap {
   display: -webkit-box;
@@ -768,8 +771,13 @@ IMG {
   }
 }
 @media (max-width: 768px) {
+  .insta-box__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
   .insta-box__wiget {
     width: 100%;
+    margin-bottom: 15px;
   }
   .insta-box__cover {
     height: 50vw;
