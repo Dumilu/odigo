@@ -39,10 +39,10 @@
                                 <span class="nav-list__toggle-button"></span>
                             </label>
                             <ul class="nav-list__container">
-                                <li class="nav-list__item"><a href="info.html">Articles</a></li>
-                                <li class="nav-list__item"><a href="news.html">Locations</a></li>
-                                <li class="nav-list__item"><a href="price.html">Videos</a></li>
-                                <li class="nav-list__item"><a href="catalog.html">Sign in</a></li>
+                                <li class="nav-list__item"><a href="#articles">Articles</a></li>
+                                <li class="nav-list__item"><a href="#locations">Locations</a></li>
+                                <li class="nav-list__item"><a href="#videos">Videos</a></li>
+                                <li class="nav-list__item"><a href="#contacts">Sign in</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -73,6 +73,7 @@
         <main class="content-box">
             <section class="content-box__container content-box--float">
                 <h2 class="content-box__title">Benefits of Odigo</h2>
+                <a class="visually-hidden" name="articles"></a>
                 <ul class="services">
                     <li class="services__item services__item--icon services__item--house">
                         <h3 class="services__title">Welcome to Odigo!</h3>
@@ -95,7 +96,7 @@
             <section class="catalog">
                 <div class="catalog__wrap">
                     <h2 class="catalog__title">Get inspired for your next trip</h2>
-                    <a class="inner-link" href="#">View all</a>
+                    <a class="inner-link" href="#" name="locations">View all</a>
                 </div>
                 <ul class="gallery">
                     <li class="photo photo--big" style="background-image: url(public/image/fuji.jpg);">
@@ -344,6 +345,7 @@
 
             <section class="video">
                 <h2 class="visually-hidden">Video</h2>
+                <a class="visually-hidden" name="videos"></a>
                 <video src="" poster="public/image/video.jpg">
                     <svg xmlns="http://www.w3.org/2000/svg"><use xlink:href="#icon-play"></use></svg></video>
             </section>
@@ -354,7 +356,7 @@
         <footer>
             <h2 class="visually-hidden">About Company</h2>
             <nav class="footer-navigation">
-                <a class="footer-navigation__logo main-logo--large">
+                <a class="footer-navigation__logo main-logo--large" name="contacts">
                     <img class="footer-navigation__image" src="public/icons/odigo-logo.svg" alt="Odiqo">
                 </a>
                 <div class="footer-navigation__wrap">
