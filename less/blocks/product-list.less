@@ -2,4 +2,32 @@
     margin: 0;
     margin-bottom: 11.0935vw;
     padding: 0;
+
+    &__title {
+        margin: 0;
+        margin-bottom: 20px;
+        padding-bottom: 8px;
+        max-width: 47.5%;
+        font-size: 35px;
+        line-height: 42px;
+        font-weight: 400;
+        border-bottom: 2px solid #006DFE;
+    }
+}
+
+@media @mobile {
+    .product-list {
+        &__title {
+            font-size: 30px;
+            line-height: 30px;
+        }
+    }
+}
+
+@media @mobile-tin {
+    .product-list {
+        &__title {
+            max-width: 100%;
+        }
+    }
 }

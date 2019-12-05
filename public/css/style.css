@@ -622,6 +622,27 @@ IMG {
   margin-bottom: 11.0935vw;
   padding: 0;
 }
+.product-list__title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  max-width: 47.5%;
+  font-size: 35px;
+  line-height: 42px;
+  font-weight: 400;
+  border-bottom: 2px solid #006DFE;
+}
+@media (max-width: 768px) {
+  .product-list__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .product-list__title {
+    max-width: 100%;
+  }
+}
 .post {
   display: -webkit-box;
   display: flex;
