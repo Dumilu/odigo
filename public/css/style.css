@@ -412,6 +412,9 @@ IMG {
   .content-box__title {
     font-size: 30px;
   }
+  .content-box__container {
+    padding-bottom: 0;
+  }
 }
 .services {
   margin: 0;
@@ -660,9 +663,9 @@ IMG {
   box-sizing: border-box;
   width: 47.54%;
   padding: 2.06% 3.72%;
-}
-.post__content A {
-  margin-bottom: 24px;
+  /* & A {
+            margin-bottom: 24px;
+        }*/
 }
 .post__title {
   margin: 0;
