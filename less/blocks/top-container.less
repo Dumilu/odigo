@@ -12,10 +12,18 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+  &__wrap {
+    max-width: 1262px;
+    max-height: 962px;
+    margin: 0 auto;
+    padding: 3.8% 10.4% 26.1% 13.1%;
+  }
+}
+
+@media @mobile-tin {
+  .top-container {
     &__wrap {
-      max-width: 1262px;
-      max-height: 962px;
-      margin: 0 auto;
-      padding: 3.8% 10.4% 26.1% 13.1%;
+      padding-top: 10%;
     }
+  }
 }
