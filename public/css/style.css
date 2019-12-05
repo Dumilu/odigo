@@ -386,6 +386,7 @@ IMG {
   margin-left: auto;
   margin-right: auto;
   margin-top: -17.4326466%;
+  margin-bottom: 10.1426vw;
   background-color: #ffffff;
   box-shadow: 0 2px 20px 0 #15182429;
 }
@@ -573,7 +574,6 @@ IMG {
   max-width: 1262px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10.1426vw;
 }
 .catalog__wrap {
   display: -webkit-box;
@@ -602,6 +602,19 @@ IMG {
   .catalog__title {
     font-size: 20px;
     line-height: 25px;
+  }
+  .catalog__title ~ .inner-link {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 }
 .product-list {

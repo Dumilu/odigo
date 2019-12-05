@@ -3,7 +3,6 @@
     max-width: 1262px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10.1426vw;
 
     &__wrap {
         display: flex;
@@ -36,6 +35,19 @@
         &__title {
             font-size: 20px;
             line-height: 25px;
+
+            & ~ .inner-link {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                margin: -1px;
+                border: 0;
+                padding: 0;
+                white-space: nowrap;
+                clip-path: inset(100%);
+                clip: rect(0 0 0 0);
+                overflow: hidden;
+            }
         }
     }
 }
