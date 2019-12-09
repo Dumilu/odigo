@@ -74,6 +74,11 @@ IMG {
     padding-top: 10%;
   }
 }
+@media (min-width: 1900px) {
+  .top-container__wrap {
+    padding-bottom: 400px;
+  }
+}
 /* Main Header */
 .main-header {
   margin: 0 auto 12.222vw;
@@ -88,6 +93,11 @@ IMG {
 }
 .main-header__logo {
   width: 100px;
+}
+@media (min-width: 1900px) {
+  .main-header {
+    margin-bottom: 180px;
+  }
 }
 /* Main Navigation */
 .nav-list__container {
@@ -320,6 +330,7 @@ IMG {
   margin: 0;
   margin-bottom: 10px;
   width: 17.708vw;
+  max-width: 300px;
   min-width: 240px;
   text-overflow: ellipsis;
   border: none;
@@ -415,6 +426,14 @@ IMG {
   }
   .content-box__container {
     padding-bottom: 0;
+  }
+}
+@media (min-width: 1900px) {
+  .content-box__title {
+    margin-bottom: 110px;
+  }
+  .content-box__container {
+    margin-bottom: 110px;
   }
 }
 .services {
@@ -655,6 +674,11 @@ IMG {
     max-width: 100%;
   }
 }
+@media (min-width: 1900px) {
+  .product-list {
+    margin-bottom: 160px;
+  }
+}
 .post {
   display: -webkit-box;
   display: flex;
@@ -842,6 +866,11 @@ IMG {
     margin: 0 auto;
     width: 250px;
     padding: 12px 85px;
+  }
+}
+@media (min-width: 1900px) {
+  .insta-box {
+    margin-bottom: 160px;
   }
 }
 .action-list {
