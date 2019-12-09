@@ -338,6 +338,7 @@ IMG {
   font-size: 24px;
   text-transform: uppercase;
   padding: 15px 39px 14px 39px;
+  cursor: pointer;
 }
 @media (max-width: 1024px) {
   .search {
@@ -517,6 +518,14 @@ IMG {
   margin-left: 20px;
   display: inline-block;
   vertical-align: 2px;
+}
+@media (max-width: 768px) {
+  .inner-link {
+    text-align: center;
+  }
+  .inner-link::after {
+    display: none;
+  }
 }
 /* Gallery */
 .gallery {
@@ -817,6 +826,9 @@ IMG {
     font-size: 25px;
     line-height: 30px;
   }
+  .insta-box__wrap :last-child {
+    margin-bottom: 0;
+  }
   .insta-box__wiget {
     width: 100%;
     margin-bottom: 15px;
@@ -826,7 +838,10 @@ IMG {
     height: 50vw;
   }
   .insta-box__link {
-    margin: 0 calc((100% - 118px) / 2);
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    padding: 12px 85px;
   }
 }
 .action-list {

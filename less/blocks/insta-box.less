@@ -109,6 +109,13 @@
             line-height: 30px;
         }
 
+        &__wrap {
+            & :last-child {
+            margin-bottom: 0;
+        }
+
+        }
+
         &__wiget {
             width: 100%;
             margin-bottom: 15px;
@@ -120,7 +127,10 @@
         }
 
         &__link {
-            margin: 0 calc(~"(100% - 118px) / 2");
+            display: block;
+            margin: 0 auto;
+            width: 250px;
+            padding: 12px 85px;
         }
     }
 }
